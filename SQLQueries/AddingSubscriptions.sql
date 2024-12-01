@@ -1,0 +1,7 @@
+INSERT INTO Subscriptions
+VALUES (1, GETDATE(), GETDATE() + 30)
+
+INSERT INTO Subscriptions
+VALUES (0, GETDATE(), NULL);
+
+

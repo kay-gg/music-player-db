@@ -1,3 +1,9 @@
+CREATE TABLE SongSet (
+	playlistID int, --fk
+	songID int,		--fk
+	creationDate date,
+);
+
 CREATE TABLE Users (
     userID int primary key,
     username varchar(16) unique,
@@ -38,7 +44,6 @@ CREATE TABLE Artists (
 	artistID int primary key,
 	name varchar(100),
 	description text,
-	picture image, 
 );
 
 CREATE TABLE Albums (

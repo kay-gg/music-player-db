@@ -1,3 +1,11 @@
+ALTER TABLE SongSet
+add FOREIGN KEY (playlistID)
+REFERENCES Playlists(playlistID)
+
+ALTER TABLE SongSet
+add FOREIGN KEY (songID)
+REFERENCES Songs(songID)
+
 ALTER TABLE users
 add foreign key (subscriptionID) 
 references Subscriptions(subscriptionID)
